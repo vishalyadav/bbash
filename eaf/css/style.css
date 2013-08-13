@@ -8,11 +8,11 @@ html {
 }
 
 #eaf_title {
-    position: fixed;
+    position: absolute;
     
     left: 50%;
     margin-left: -375px;
-    top: 130px;
+    top: 110px;
 }
 
 #wrapper {
@@ -28,8 +28,8 @@ html {
 
 .type {
     font-size: 70px;
-    position: fixed;
-    top: 340px;
+    position: absolute;
+    top: 320px;
     left: 50%;
     margin-left: -420px;
     width: 840px;
@@ -69,9 +69,9 @@ html {
 }
 
 #secs, #mins, #hours, #days, #sectext, #mintext, #hourtext, #daytext {
-    position: fixed;
+    position: absolute;
     left: 50%;
-    top: 430px;
+    top: 70px;
     font-size: 55px;
 }
 
@@ -108,9 +108,9 @@ html {
 }
 
 .logos {
-    position: fixed;
-    top: 620px;
-    width: 100%
+    position: absolute;
+    top: 600px;
+    width: 100%;
 }
 
 #bb_link {

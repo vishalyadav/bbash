@@ -2,7 +2,15 @@
  * author Remy Sharp
  * url http://remysharp.com/2009/01/26/element-in-view-event-plugin/
  */
+
+/**
+ * edited by Keaton Boyle
+ * added a threshold for reasonable visibility, i.e. so that VISIBLE_THRESHOLD
+ *  or less pixels showing doesn't constitute visibility
+ */
 (function ($) {
+    var VISIBLE_THRESHOLD = 50;
+
     function getViewportHeight() {
         var height = window.innerHeight; // Safari, Opera
         var mode = document.compatMode;
@@ -37,12 +45,13 @@
                     height = $el.height(),
                     inview = $el.data('inview') || false;
 
-                if (scrolltop > (top + height) || scrolltop + vpH < top) {
+                if (scrolltop > (top + height - VISIBLE_THRESHOLD) || 
+                    scrolltop + vpH - VISIBLE_THRESHOLD < top) {
                     if (inview) {
                         $el.data('inview', false);
                         $el.trigger('inview', [ false ]);                        
                     }
-                } else if (scrolltop < (top + height)) {
+                } else if (scrolltop < (top + height - VISIBLE_THRESHOLD)) {
                     if (!inview) {
                         $el.data('inview', true);
                         $el.trigger('inview', [ true ]);

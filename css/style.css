@@ -147,10 +147,11 @@ html, body {
     width: 80px;
     display: inline-block;
     vertical-align: bottom;
+    text-align: center;
     
     margin-left: -0.2em; /* hacky, to account for the whitespace inserted for the newlines
                             in the html */
-    margin-right: 5px;
+    margin-right: 0;
 }
 
 .logos {

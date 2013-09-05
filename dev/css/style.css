@@ -1,0 +1,383 @@
+/* BOILERPLATE ***************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* BASICS ********************************************************************/
+html, body {
+   height: 100%;
+   width: 100%;
+}
+#container {
+   height: 100%;
+   width: 100%;
+}
+#main_content {
+   height: 100%;
+   width: 100%;
+}
+.vcenter_outer {
+   font-size: 0;
+   line-height: 0;
+   white-space: nowrap;
+}
+.vcenter_outer:before {
+   height: 100%;
+   display: inline-block;
+   vertical-align: middle;
+   content: '';
+}
+.vcenter_inner {
+   display: inline-block;
+   vertical-align: middle;
+   font-size: 20px;
+   line-height: 20px;
+}
+.vcenter_inner.offset_center {
+   padding-left: 200px;
+   width: calc(100% - 200px);
+   text-align: center;
+}
+.fullpage_section {
+    height: 100%;
+    min-height: 700px;
+    width: 100%;
+    min-width: 800px;
+
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* NAV ***********************************************************************/
+#sticky_menu {
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+#navigation {
+    position: relative;
+    top: 80px;
+}
+
+
+
+/* SPECIFIC SECTIONS *********************************************************/
+/*** BBASH *******************************************************************/
+#bbash
+{
+   text-align: right;
+}
+#bbash:after { 
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: -1;
+   background-image: url("../img/pauley_large.jpg");
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+#bbash_container {
+   margin-right: 20px;
+   font-family: 'Bender-Black', serif;
+   color: #FFFFFF;
+   font-size: 50px;
+   line-height: 50px;
+}
+
+#bbash_container img#bb_type {
+   width: 450px;
+   margin-bottom: 30px;
+}
+
+#bbash_container #date {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+#bbash_container #countdown span.fixed_width_num {
+    width: 80px;
+    display: inline-block;
+    vertical-align: bottom;
+    text-align: center;
+    
+    margin-left: -0.2em; /* hacky, to account for the whitespace inserted for the newlines
+                            in the html */
+    margin-right: 0;
+}
+
+.logos {
+   margin-top: 10px;
+}
+
+.logos img{
+   margin-left: 10px;
+}
+
+
+/*** CONCERT *****************************************************************/
+#concert_fixed_wrapper
+{
+   font-family: 'Bender-Black', serif;
+   width: 900px;
+   height: 600px;
+   display: inline-block;
+   overflow: hidden;
+}
+#concert_title_wrapper
+{
+   color: #FFFFFF;
+   text-align: right;
+   width: 100%;
+}
+
+#concert_title_wrapper_left
+{
+   font-size: 50px;
+   line-height: 50px;
+   display: inline-block;
+   text-align: right;
+}
+#concert_title_wrapper_right
+{
+   font-size: 120px;
+   line-height: 120px;
+   display: inline-block;
+   text-align: left;
+}
+#artist_slide_canvas
+{
+   margin-top: 20px;
+   position: relative;
+   width: 900px;
+   height: 550px;
+}
+#opener_wrapper,
+#headliner_wrapper
+{
+   position: relative;
+   width: 100%;
+}
+#headliner_title
+{
+   text-align: left;
+   color: #000000;
+   height: 120px;
+   width: 880px;
+   padding-left: 20px;
+   font-size: 100px;
+   line-height: 100px;
+   background: #f8e505;
+   position: relative;
+   cursor: pointer;
+}
+#opener_info,
+#headliner_info
+{
+   display: none;
+   height: 220px;
+   background: gray;
+   width: 100%;
+}
+#opener_title
+{
+   position: relative;
+   text-align: right;
+   margin-top: 20px;
+   padding-right: 20px;
+   color: #000000;
+   height: 120px;
+   width: 880px;
+
+   font-size: 100px;
+   line-height: 100px;
+   background: #f8e505;
+   cursor: pointer;
+}
+
+.down_arrow_left:after
+{
+   content: "";
+   height: 0px;
+   width: 0px;
+   border-top: 30px solid black;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position:absolute;
+   left: 20px;
+   top: 40px;
+}
+.down_arrow_right:after
+{
+   content: "";
+   height: 0px;
+   width: 0px;
+   border-top: 30px solid black;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position:absolute;
+   right: 20px;
+   top: 40px;
+}
+.up_arrow_left:after
+{
+   content: "";
+   height: 0px;
+   width: 0px;
+   border-bottom: 30px solid black;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position:absolute;
+   left: 20px;
+   top: 40px;
+}
+.up_arrow_right:after
+{
+   content: "";
+   height: 0px;
+   width: 0px;
+   border-bottom: 30px solid black;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position:absolute;
+   right: 20px;
+   top: 40px;
+}
+
+
+
+
+#concert,
+#film,
+#dance,
+#lounge
+{
+    background: #1460ea; /* Old browsers */
+    background: -moz-linear-gradient(left,  #1460ea 0%, #f8e505 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1460ea), color-stop(100%,#f8e505)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #1460ea 0%,#f8e505 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #1460ea 0%,#f8e505 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #1460ea 0%,#f8e505 100%); /* IE10+ */
+    background: linear-gradient(to right,  #1460ea 0%,#f8e505 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1460ea', endColorstr='#f8e505',GradientType=1 ); /* IE6-9 */
+ }
+
+
+
+#wrapper {
+    /*position: absolute;*/
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    color: #FFFFFF;
+    font-family: 'Bender-Black', serif;
+    text-align: center;
+}
+
+#eaf_link {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    left: 10px;
+    top: 10px;
+    color: #FFFFFF;
+    z-index: 101;
+}
+
+#eaf_link:hover {
+    opacity: .7;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    font-family: 'Bender-Black', serif;
+    color: #000000;
+    font-size: 40px;
+    width: 190px;
+    background-color: #FFFFFF;
+    margin: 10px 10px 10px 0;
+    height: 45px;
+    padding-left: 10px;
+    line-height: 50px;
+}
+
+h2 {
+    font-family: 'Bender-Black', serif;
+    color: #FFFFFF;
+    font-size: 125px;
+    line-height: 125px;
+    text-align: center;    
+    position: relative;
+}
+
+.location {
+    font-family: 'Bender-Black', serif;
+    color: #FFFFFF;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+}
+
+h3 {
+    font-family: 'Bender-Black', serif;
+    color: #FFFFFF;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;    
+    position: relative;
+}

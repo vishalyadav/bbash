@@ -1,65 +1,11 @@
 $(document).ready(function(){
-	/* One page scrolling */
-	$("#navigation").localScroll();
-	window.location.replace("#bbash");
-	$(window).scrollTop(0);
-	
-	$("#bbash_link").css({"background-color": "#f8e505" });
 
-	$("#bbash, #concert, #film, #lounge, #dance").bind("inview", function (event, visible) {
-			if (visible == true) {
-				$(this).addClass("inview");
-			} else {
-				$(this).removeClass("inview");
-			}
-	});
-
-	$("li").click(function(){
-			setTimeout(function() {$(window).scrollTop($(window).scrollTop() + 1);}, 1100);
-	});
-	$(window).bind('scroll', function(){
-		if($("#bbash").hasClass("inview")) {
-			$("#bbash_link").css({"background-color": "#f8e505" });
-		} else {
-			$("#bbash_link").css({"background-color": "#ffffff" });
-		}
-		if($("#concert").hasClass("inview")) {
-			if(!$("#bbash").hasClass("inview")) {
-				$("#concert_link").css({"background-color": "#f8e505" });
-			} else {
-				$("#concert_link").css({"background-color": "#ffffff" });
-			}
-		} else {
-			$("#concert_link").css({"background-color": "#ffffff" });
-		}
-		if($("#film").hasClass("inview")) {
-			if(!$("#concert").hasClass("inview")) {
-				$("#film_link").css({"background-color": "#f8e505" });
-			} else {
-				$("#film_link").css({"background-color": "#ffffff" });
-			}
-		} else {
-			$("#film_link").css({"background-color": "#ffffff" });
-		}
-		if($("#dance").hasClass("inview")) {
-			if(!$("#film").hasClass("inview")) {
-				$("#dance_link").css({"background-color": "#f8e505" });
-			} else {
-				$("#dance_link").css({"background-color": "#ffffff" });
-			}
-		} else {
-			$("#dance_link").css({"background-color": "#ffffff" });
-		}
-		if($("#lounge").hasClass("inview")) {
-			if(!$("#dance").hasClass("inview")) {
-				$("#lounge_link").css({"background-color": "#f8e505" });
-			} else {
-				$("#lounge_link").css({"background-color": "#ffffff" });
-			}
-		} else {
-			$("#lounge_link").css({"background-color": "#ffffff" });
-		}
-	});
+   $('.nav_link').on('mouseover', function () {
+      $(this).find('.nav_toggle').toggle(100);
+   });
+   $('.nav_link').on('mouseout', function () {
+      $(this).find('.nav_toggle').toggle(100);
+   });
 
 	/* Countdown logic */
 	var bb_date = new Date(2013, 8, 22, 20, 0, 0, 0);

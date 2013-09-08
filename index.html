@@ -12,22 +12,34 @@
     <title>Bruin Bash 2013</title>
     <meta name="Description" content="cec. let's get the pauley started.">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
-	<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
-	<script type="text/javascript" src="js/jquery.inview.js"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
 	<a href="http://bruinbash.ucla.edu/eaf"><div id="eaf_link">EAF</div></a>
 	<div id="container">
 		<div id="sticky_menu">
-			<ul id="navigation">
-				<a href="#bbash"><li id="bbash_link">BBASH</li></a>
-				<a href="#concert"><li id="concert_link">CONCERT</li></a>
-				<a href="#film"><li id="film_link">FILM</li></a>
-				<a href="#dance"><li id="dance_link">DANCE</li></a>
-				<a href="#lounge"><li id="lounge_link">LOUNGE</li></a>
-			</ul>
+			<div id="navigation">
+				<div id="concert_link" class="nav_link">CONCERT
+               <div class="nav_toggle">
+                  Pauley Pavilion, 8PM
+               </div>
+            </div>
+            <div id="film_link" class="nav_link">FILM
+               <div class="nav_toggle">
+                  Ackerman Grand Ballroom, Time TBA
+               </div>
+            </div>
+				<div id="dance_link" class="nav_link">DANCE
+               <div class="nav_toggle">
+                  Location TBA, Time TBA
+               </div>
+            </div>
+				<div id="lounge_link" class="nav_link">LOUNGE
+               <div class="nav_toggle">
+                  Bruin Plaza, Time TBA
+               </div>
+            </div>
+			</div>
 		</div>
 		<div id="main_content">
 			<div class="fullpage_section vcenter_outer" id="bbash">
@@ -51,40 +63,8 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="fullpage_section vcenter_outer" id="concert">
-				<div class="vcenter_inner offset_center">
-				<h2>CONCERT</h2>
-				<h3>PAULEY PAVILION</h3>
-				<h3>8 PM</h3>
-            </div>
-			</div>
-
-			<div class="fullpage_section vcenter_outer" id="film">
-				<div class="vcenter_inner offset_center">
-				<h2>FILM</h2>
-				<h3>ACKERMAN<br>GRAND BALLROOM</h3>
-				<h3>TIME TBA</h3>
-            </div>
-			</div>
-
-			<div class="fullpage_section vcenter_outer" id="dance">
-				<div class="vcenter_inner offset_center">
-				<h2>DANCE</h2>
-				<h3>LOCATION TBA</h3>
-				<h3>TIME TBA</h3>
-            </div>
-			</div>
-
-			<div class="fullpage_section vcenter_outer" id="lounge">
-				<div class="vcenter_inner offset_center">
-				<h2>LOUNGE</h2>
-				<h3>BRUIN PLAZA</>
-				<h3>TIME TBA</h3>
-            </div>
-			</div>
-		</div>
-	</div>  
+      </div>
+   </div>
    <!-- google analytics -->
    <script type="text/javascript">
 

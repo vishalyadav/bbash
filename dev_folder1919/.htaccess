@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "BBash Dev Sandbox"
+AuthUserFile /public_html/dev/.htpasswd
+Require valid-user

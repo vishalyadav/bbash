@@ -103,15 +103,30 @@ $(document).ready(function(){
 	/* end Countdown logic */
 
 
-
+	var headliner, opener = false;
    /* concert artist dropdowns */
    $('#headliner_title').on('click', function() {
+   	if(headliner) {
+			$('#opener_wrapper').slideDown();
+			headliner = false;
+		} else {
+			$('#opener_wrapper').slideUp();
+			headliner = true;
+		}
       toggleArtistInfo($(this), 'right');
-      toggleArtistInfo($('#opener_title.open'), 'left');
+//      toggleArtistInfo($('#opener_title.open'), 'left');
+		
    });
    $('#opener_title').on('click', function() {
       toggleArtistInfo($(this), 'left');
-      toggleArtistInfo($('#headliner_title.open'), 'right');
+//      toggleArtistInfo($('#headliner_title.open'), 'right');
+		if(opener) {
+			$('#headliner_wrapper').slideDown(200);
+			opener = false;
+		} else {
+			$('#headliner_wrapper').slideUp(200);
+			opener = true;
+		}
    });
       
 
@@ -120,9 +135,9 @@ $(document).ready(function(){
 function toggleArtistInfo($artistTitle, rOrl)
 {
    $artistTitle.siblings('.artist_info').slideToggle(200);
-   $artistTitle.toggleClass('open')
-                .toggleClass('down_arrow_' + rOrl)
-                .toggleClass('up_arrow_' + rOrl);
+//   $artistTitle.toggleClass('open')
+//                .toggleClass('down_arrow_' + rOrl)
+//                .toggleClass('up_arrow_' + rOrl);
 }
 
 

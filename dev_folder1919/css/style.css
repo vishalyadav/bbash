@@ -169,7 +169,7 @@ html, body {
 {
    font-family: 'Bender-Black', serif;
    width: 900px;
-   height: 600px;
+   height: 800px;
    display: inline-block;
    overflow: hidden;
 }
@@ -224,8 +224,8 @@ html, body {
 #headliner_info
 {
    display: none;
-   height: 220px;
-   background: gray;
+   height: 420px;
+   background-color: rgba(255,255,255,0.6);
    width: 100%;
 }
 #opener_title
@@ -296,7 +296,15 @@ html, body {
 
 
 
-#concert,
+#concert {
+   background-image: url("../img/concerts.jpg");
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 900px;
+}
+
 #film,
 #dance,
 #lounge

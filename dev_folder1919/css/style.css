@@ -217,7 +217,7 @@ html, body {
    width: 880px;
    padding-left: 20px;
    font-size: 100px;
-   line-height: 130px;
+   line-height: 1.3;
    background: #f8e505;
    position: relative;
    cursor: pointer;
@@ -253,7 +253,7 @@ html, body {
    width: 880px;
 
    font-size: 100px;
-   line-height: 130px;
+   line-height: 1.3;
    background: #f8e505;
    cursor: pointer;
 }
@@ -269,7 +269,7 @@ html, body {
    width: 880px;
 
    font-size: 38px;
-   line-height: 63px;
+   line-height: 1.6;
    background: #000000;
    cursor: pointer;
 }
@@ -386,7 +386,7 @@ html, body {
   font-size: 26px;
   position: relative;
   padding-top: 40px;
-  line-height: 30px;
+  line-height: 1.3;
 }
 
 #concession_deets {
@@ -517,14 +517,14 @@ html, body {
    width: 400px;
    padding-left: 30px;
    font-size: 60px;
-   line-height: 130px;
+   line-height: 2;
    background: #2E2E2E;
    position: relative;
    cursor: pointer;
 }
 
 #right_title {
-  line-height: 65px;
+  line-height: 1.05;
 }
 #left_wrapper {
   position: absolute;
@@ -577,7 +577,7 @@ html, body {
    width: 880px;
    padding-left: 20px;
    font-size: 100px;
-   line-height: 130px;
+   line-height: 1.3;
    background: #f8e505;
    position: relative;
    margin-bottom: 30px;

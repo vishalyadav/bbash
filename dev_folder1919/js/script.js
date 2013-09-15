@@ -107,10 +107,16 @@ $(document).ready(function(){
    /* concert artist dropdowns */
    $('#headliner_title').on('click', function() {
    	if(headliner) {
+   			$('#tyga_pic, #tyga_bio, #tyga_vid').hide();
 			$('#opener_wrapper').slideDown(400);
 			$('#parking_wrapper').slideDown(400);
 			headliner = false;
 		} else {
+			if(parking) {
+				toggleArtistInfo($('#parking_title'), 'right');
+				parking = false;
+			}
+			$('#tyga_pic, #tyga_bio, #tyga_vid').show();
 			$('#opener_wrapper').fadeOut(400);
 			$('#parking_wrapper').fadeOut(400);
 			headliner = true;
@@ -120,30 +126,35 @@ $(document).ready(function(){
 		
    });
    $('#opener_title').on('click', function() {
-      toggleArtistInfo($(this), 'left');
+      
 //      toggleArtistInfo($('#headliner_title.open'), 'right');
 		if(opener) {
+			$('#e40_pic, #e40_bio, #e40_vid').hide();
 			$('#headliner_wrapper').slideDown(400);
 			$('#parking_wrapper').slideDown(400);
+
 			opener = false;
 		} else {
+			if(parking) {
+				toggleArtistInfo($('#parking_title'), 'right');
+				parking = false;
+			}
+			$('#e40_pic, #e40_bio, #e40_vid').show();
 			$('#headliner_wrapper').slideUp(400);
-			$('#parking_wrapper').fadeOut(400);
+			$('#parking_wrapper').hide();
 			opener = true;
 		}
+		toggleArtistInfo($(this), 'left');
    });
 	$('#parking_title').on('click', function() {
 	      toggleArtistInfo($(this), 'right');
+	      if(parking) {
+	      	parking = false;
+	      } else {
+	      	parking = true;
+	      }
 	//      toggleArtistInfo($('#headliner_title.open'), 'right');
-			if(parking) {
-				$('#headliner_wrapper').slideDown(400);
-				$('#opener_wrapper').slideDown(400);
-				parking = false;
-			} else {
-				$('#headliner_wrapper').slideUp(400);
-				$('#opener_wrapper').slideUp(400);
-				parking = true;
-			}
+			
 	   });
       
 

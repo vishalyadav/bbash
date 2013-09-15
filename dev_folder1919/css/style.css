@@ -230,6 +230,16 @@ html, body {
    font-family: 'Bender', serif;
    font-size: 16px;
 }
+
+#parking_info {
+   display: none;
+   height: 270px;
+   background-color: rgba(255,255,255,0.6);
+   width: 100%;
+   font-family: 'Bender-Black', serif;
+   font-size: 24px;
+}
+
 #opener_title
 {
    position: relative;
@@ -357,6 +367,34 @@ html, body {
 
 #tyga_sndcld {
   left: 440px;
+}
+
+.deets {
+  width: 440px;
+  color: #000000;
+  text-align: center;
+  font-size: 26px;
+  position: relative;
+  padding-top: 40px;
+  line-height: 30px;
+}
+
+#concession_deets {
+  position: relative;
+  top: -270px;
+  left: 450px;
+  font-size: 30px;
+}
+
+#parking_deets {
+    border-right: 6px black solid;
+    height: 230px;
+}
+
+#sub_deets {
+  font-size: 26px;
+  width: 320px;
+  text-align: right;
 }
 
 

@@ -443,7 +443,7 @@ html, body {
    height: 900px;
  }
 
-#film_fixed_wrapper, #dance_fixed_wrapper
+#film_fixed_wrapper, #dance_fixed_wrapper, #lounge_fixed_wrapper
 {
    font-family: 'Bender-Black', serif;
    width: 900px;
@@ -452,7 +452,7 @@ html, body {
    overflow: hidden;
 }
 
-#film_title_wrapper, #dance_title_wrapper
+#film_title_wrapper, #dance_title_wrapper, #lounge_title_wrapper
 {
    color: #f8e505;
    text-align: right;
@@ -462,7 +462,7 @@ html, body {
    top: 50px;
 }
 
-#film_time, #dance_time {
+#film_time, #dance_time, #lounge_time {
   color: #FFFFFF;
   position: relative;
   top: 40px;
@@ -548,6 +548,43 @@ html, body {
 
 #left_player, #right_player {
   padding: 20px;
+}
+
+
+/******** LOUNGE ******************************/
+
+#lounge {
+    background-image: url("../img/bplazaedit.jpg");
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 900px;
+ }
+
+#lounge_title_wrapper {
+  color: #000000;
+}
+
+#lounge_activities_wrapper {
+  position: relative;
+  top: 150px;
+}
+.lounge_activities {
+  text-align: center;
+   color: #000000;
+   height: 120px;
+   width: 880px;
+   padding-left: 20px;
+   font-size: 100px;
+   line-height: 130px;
+   background: #f8e505;
+   position: relative;
+   margin-bottom: 30px;
+}
+
+#photobooth, #refreshments {
+  background: #FFFFFF;
 }
 
 #wrapper {

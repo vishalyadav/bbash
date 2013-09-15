@@ -163,11 +163,13 @@ $(document).ready(function(){
 				top: "0px"
 			});
 			film = false;
+			$('#donjon_pic, #donjon_bio, #donjon_vid').hide();
 		} else {
 			$("#film_wrapper").animate({
 				top: "-100px"
 			});
 			film = true;
+			$('#donjon_pic, #donjon_bio, #donjon_vid').show();
 		}
 	});
 	$('#left_title').on('click', function() {

@@ -194,7 +194,7 @@ html, body {
    display: inline-block;
    text-align: left;
 }
-#artist_slide_canvas, #film_slide_canvas
+#artist_slide_canvas, #film_slide_canvas, #dance_slide_canvas
 {
    margin-top: 20px;
    position: relative;
@@ -203,7 +203,8 @@ html, body {
 }
 #opener_wrapper,
 #headliner_wrapper,
-#film_wrapper
+#film_wrapper,
+#dance_wrapper
 {
    position: relative;
    width: 100%;
@@ -334,6 +335,14 @@ html, body {
   top: 20px;
 }
 
+.up_arrow_right#left_title:after, .up_arrow_right#right_title:after {
+  border-bottom: 30px solid white;
+}
+
+.down_arrow_right#left_title:after, .down_arrow_right#right_title:after {
+  border-top: 30px solid white;
+}
+
 .artist_pic {
   position: absolute;
   left: 0;
@@ -410,7 +419,7 @@ html, body {
    height: 900px;
 }
 
-#dance,
+
 #lounge
 {
     background: #1460ea; /* Old browsers */
@@ -434,7 +443,7 @@ html, body {
    height: 900px;
  }
 
-#film_fixed_wrapper
+#film_fixed_wrapper, #dance_fixed_wrapper
 {
    font-family: 'Bender-Black', serif;
    width: 900px;
@@ -443,7 +452,7 @@ html, body {
    overflow: hidden;
 }
 
-#film_title_wrapper
+#film_title_wrapper, #dance_title_wrapper
 {
    color: #f8e505;
    text-align: right;
@@ -453,7 +462,7 @@ html, body {
    top: 50px;
 }
 
-#film_time {
+#film_time, #dance_time {
   color: #FFFFFF;
   position: relative;
   top: 40px;
@@ -488,6 +497,57 @@ html, body {
   text-align: left;
   font-family: 'Bender', serif;
    font-size: 16px;
+}
+
+/*********** DANCE ************************************/
+
+#dance {
+    background-image: url("../img/djedit.jpg");
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 900px;
+ }
+
+#left_title, #right_title {
+   text-align: left;
+   color: #FFFFFF;
+   height: 120px;
+   width: 400px;
+   padding-left: 30px;
+   font-size: 60px;
+   line-height: 130px;
+   background: #2E2E2E;
+   position: relative;
+   cursor: pointer;
+}
+
+#right_title {
+  line-height: 65px;
+}
+#left_wrapper {
+  position: absolute;
+}
+#right_wrapper {
+  position: relative;
+  top: 0px;
+  left: 460px;
+}
+
+#dance_slide_canvas {
+  margin-top: 300px;
+}
+
+#left_info, #right_info {
+   display: none;
+   height: 210px;
+   background-color: rgba(255,255,255,0.6);
+   width: 430px;
+}
+
+#left_player, #right_player {
+  padding: 20px;
 }
 
 #wrapper {

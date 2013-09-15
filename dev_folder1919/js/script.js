@@ -169,7 +169,16 @@ $(document).ready(function(){
 			});
 			film = true;
 		}
-	})
+	});
+	$('#left_title').on('click', function() {
+		toggleArtistInfo($(this), 'right');
+		
+	});
+	$('#right_title').on('click', function() {
+		toggleArtistInfo($(this), 'right');
+		
+	});
+
       
 
 });

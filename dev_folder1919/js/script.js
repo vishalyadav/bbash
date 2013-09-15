@@ -103,7 +103,7 @@ $(document).ready(function(){
 	/* end Countdown logic */
 
 
-	var headliner, opener, parking = false;
+	var headliner, opener, parking, film = false;
    /* concert artist dropdowns */
    $('#headliner_title').on('click', function() {
    	if(headliner) {
@@ -156,6 +156,20 @@ $(document).ready(function(){
 	//      toggleArtistInfo($('#headliner_title.open'), 'right');
 			
 	   });
+	$('#film_title').on('click', function() {
+		toggleArtistInfo($(this), 'right');
+		if(film) {
+			$("#film_wrapper").animate({
+				top: "0px"
+			});
+			film = false;
+		} else {
+			$("#film_wrapper").animate({
+				top: "-100px"
+			});
+			film = true;
+		}
+	})
       
 
 });

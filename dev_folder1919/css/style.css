@@ -194,7 +194,7 @@ html, body {
    display: inline-block;
    text-align: left;
 }
-#artist_slide_canvas
+#artist_slide_canvas, #film_slide_canvas
 {
    margin-top: 20px;
    position: relative;
@@ -202,12 +202,13 @@ html, body {
    height: 500px;
 }
 #opener_wrapper,
-#headliner_wrapper
+#headliner_wrapper,
+#film_wrapper
 {
    position: relative;
    width: 100%;
 }
-#headliner_title
+#headliner_title, #film_title
 {
    text-align: left;
    color: #000000;
@@ -409,7 +410,6 @@ html, body {
    height: 900px;
 }
 
-#film,
 #dance,
 #lounge
 {
@@ -423,7 +423,72 @@ html, body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1460ea', endColorstr='#f8e505',GradientType=1 ); /* IE6-9 */
  }
 
+/********FILM ****************************************/
 
+ #film {
+    background-image: url("../img/film.jpg");
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 900px;
+ }
+
+#film_fixed_wrapper
+{
+   font-family: 'Bender-Black', serif;
+   width: 900px;
+   height: 800px;
+   display: inline-block;
+   overflow: hidden;
+}
+
+#film_title_wrapper
+{
+   color: #f8e505;
+   text-align: right;
+   width: 100%;
+   font-size: 60px;
+   position: relative;
+   top: 50px;
+}
+
+#film_time {
+  color: #FFFFFF;
+  position: relative;
+  top: 40px;
+}
+
+
+
+#film_info {
+   display: none;
+   height: 470px;
+   background-color: rgba(255,255,255,0.6);
+   width: 100%;
+   font-family: 'Bender-Black', serif;
+   font-size: 24px;
+   top: 200px;
+}
+
+#film_slide_canvas {
+  margin-top: 230px;
+}
+
+#donjon_vid {
+  position: absolute;
+  left: 320px;
+  margin-top: 20px;
+}
+
+#donjon_bio {
+  position: absolute;
+  left: 320px;
+  top: 460px;
+  text-align: left;
+  font-family: 'Bender', serif;
+   font-size: 16px;
+}
 
 #wrapper {
     /*position: absolute;*/

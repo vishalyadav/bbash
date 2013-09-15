@@ -224,9 +224,11 @@ html, body {
 #headliner_info
 {
    display: none;
-   height: 420px;
+   height: 520px;
    background-color: rgba(255,255,255,0.6);
    width: 100%;
+   font-family: 'Bender', serif;
+   font-size: 16px;
 }
 #opener_title
 {
@@ -291,6 +293,28 @@ html, body {
    position:absolute;
    right: 20px;
    top: 40px;
+}
+
+.artist_pic {
+  position: absolute;
+  left: 0;
+  margin: 20px;
+}
+
+.artist_bio {
+  position: absolute;
+  left: 20px;
+  margin-top: 20px;
+  top: 430px;
+  width: 369px;
+  height: 400px;
+  text-align: left;
+}
+
+.artist_video {
+  position: absolute;
+  left: 420px;
+  margin-top: 20px;
 }
 
 

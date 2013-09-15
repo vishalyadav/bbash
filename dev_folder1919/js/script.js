@@ -110,7 +110,7 @@ $(document).ready(function(){
 			$('#opener_wrapper').slideDown();
 			headliner = false;
 		} else {
-			$('#opener_wrapper').slideUp();
+			$('#opener_wrapper').fadeOut(200);
 			headliner = true;
 		}
       toggleArtistInfo($(this), 'right');

@@ -16,6 +16,20 @@
 	<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
 	<script type="text/javascript" src="js/jquery.inview.js"></script>
 	<script src="js/script.js"></script>
+	<script type="text/javascript">
+
+	if (navigator.appVersion.indexOf("Win") > -1) {
+		document.write('<style type="text/css">');
+		document.write('#opener_title, #headliner_title, #film_title, .deets{line-height: 1.05; }');
+		document.write('#left_title{line-height: 1.8; }');
+		document.write('#right_title{line-height: 0.95; }');
+		document.write('#parking_title{line-height: 1.5; }');
+		document.write('li{line-height: 1.05; }');
+		document.write('</style>');
+	}
+
+
+	</script>
 </head>
 <body>
 	<a href="http://bruinbash.ucla.edu/eaf"><div id="eaf_link">EAF</div></a>

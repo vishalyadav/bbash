@@ -199,7 +199,7 @@ html, body {
    margin-top: 20px;
    position: relative;
    width: 900px;
-   height: 550px;
+   height: 500px;
 }
 #opener_wrapper,
 #headliner_wrapper
@@ -215,7 +215,7 @@ html, body {
    width: 880px;
    padding-left: 20px;
    font-size: 100px;
-   line-height: 100px;
+   line-height: 130px;
    background: #f8e505;
    position: relative;
    cursor: pointer;
@@ -224,7 +224,7 @@ html, body {
 #headliner_info
 {
    display: none;
-   height: 520px;
+   height: 420px;
    background-color: rgba(255,255,255,0.6);
    width: 100%;
    font-family: 'Bender', serif;
@@ -241,8 +241,24 @@ html, body {
    width: 880px;
 
    font-size: 100px;
-   line-height: 100px;
+   line-height: 130px;
    background: #f8e505;
+   cursor: pointer;
+}
+
+#parking_title
+{
+   position: relative;
+   text-align: left;
+   margin-top: 20px;
+   padding-left: 20px;
+   color: #FFFFFF;
+   height: 60px;
+   width: 880px;
+
+   font-size: 38px;
+   line-height: 63px;
+   background: #000000;
    cursor: pointer;
 }
 
@@ -269,6 +285,12 @@ html, body {
    position:absolute;
    right: 20px;
    top: 40px;
+}
+.down_arrow_right#parking_title:after {
+  border-top: 20px solid white;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: 20px;
 }
 .up_arrow_left:after
 {
@@ -313,8 +335,22 @@ html, body {
 
 .artist_video {
   position: absolute;
-  left: 420px;
+  left: 460px;
   margin-top: 20px;
+}
+
+#tyga_vid {
+  left: 460px;
+}
+
+.artist_sndcld {
+  position: absolute;
+  left: 410px;
+  top: 450px;
+}
+
+#tyga_sndcld {
+  left: 440px;
 }
 
 

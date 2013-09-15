@@ -196,7 +196,7 @@ html, body {
 }
 #artist_slide_canvas, #film_slide_canvas, #dance_slide_canvas
 {
-   margin-top: 20px;
+   margin-top: 150px;
    position: relative;
    width: 900px;
    height: 500px;
@@ -452,7 +452,7 @@ html, body {
    overflow: hidden;
 }
 
-#film_title_wrapper, #dance_title_wrapper, #lounge_title_wrapper
+#film_title_wrapper, #dance_title_wrapper, #lounge_title_wrapper, #concert_title_wrapper_top
 {
    color: #f8e505;
    text-align: right;
@@ -462,10 +462,11 @@ html, body {
    top: 50px;
 }
 
-#film_time, #dance_time, #lounge_time {
+#film_time, #dance_time, #lounge_time, #concert_title_wrapper_bottom {
   color: #FFFFFF;
   position: relative;
   top: 40px;
+  line-height: 50px;
 }
 
 

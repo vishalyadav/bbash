@@ -316,6 +316,12 @@ html, body {
    right: 20px;
    top: 40px;
 }
+.up_arrow_right#parking_title:after {
+  border-bottom: 20px solid white;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: 20px;
+}
 
 .artist_pic {
   position: absolute;

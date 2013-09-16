@@ -421,7 +421,8 @@ html, body {
 
 
 #thanks,
-#lounge
+#lounge,
+#faq
 {
     background: #1460ea; /* Old browsers */
     background: -moz-linear-gradient(left,  #1460ea 0%, #f8e505 100%); /* FF3.6+ */
@@ -658,12 +659,43 @@ h3 {
     position: relative;
 }
 
+/******** FAQNKS ******************************/
+.vcenter_outer #faq_fixed_wrapper {
+   margin-left: 30px;
+   width: 900px;
+   height: 600px;
+   white-space: normal;
+   text-align: left;
+   font-family: 'Bender', serif;
+   line-height: 16px;
+   font-size: 16px;
+}
+h1 {
+    font-family: 'Bender-Black', serif;
+    color: #000;
+    font-size:  20px;
+    line-height:  20px;
+    text-align: center;    
+    position: relative;
+    margin-bottom: -15px;
+    margin-top: 10px;
+    white-space: normal;
+    word-wrap: normal;
+ }
+
 
 /******** THANKS ******************************/
 #thanks_fixed_wrapper {
    width: 900px;
    height: 600px;
 }
+strong {
+    font-family: 'Bender-Black', serif;
+   line-height: 16px;
+   font-size: 16px;
+ }
+
+
 h1 {
     font-family: 'Bender-Black', serif;
     color: #000;
@@ -674,6 +706,7 @@ h1 {
     margin-bottom: 2px;
     margin-top: 10px;
  }
+
 
  #thanks_column
  {

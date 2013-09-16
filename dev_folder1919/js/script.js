@@ -6,7 +6,7 @@ $(document).ready(function(){
 	
 	$("#bbash_link").css({"background-color": "#f8e505" });
 
-	$("#bbash, #concert, #film, #lounge, #dance").bind("inview", function (event, visible) {
+	$("#bbash, #concert, #film, #lounge, #dance, #thanks").bind("inview", function (event, visible) {
 			if (visible == true) {
 				$(this).addClass("inview");
 			} else {
@@ -58,6 +58,15 @@ $(document).ready(function(){
 			}
 		} else {
 			$("#lounge_link").css({"background-color": "#ffffff" });
+		}
+		if($("#thanks").hasClass("inview")) {
+			if(!$("#dance").hasClass("inview")) {
+				$("#thanks_link").css({"background-color": "#f8e505" });
+			} else {
+				$("#thanks_link").css({"background-color": "#ffffff" });
+			}
+		} else {
+			$("#thanks_link").css({"background-color": "#ffffff" });
 		}
 	});
 

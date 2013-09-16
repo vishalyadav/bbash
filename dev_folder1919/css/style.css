@@ -420,6 +420,7 @@ html, body {
 }
 
 
+#thanks,
 #lounge
 {
     background: #1460ea; /* Old browsers */
@@ -656,3 +657,40 @@ h3 {
     text-align: center;    
     position: relative;
 }
+
+
+/******** THANKS ******************************/
+#thanks_fixed_wrapper {
+   width: 600px
+   margin: auto;
+}
+h1 {
+    font-family: 'Bender-Black', serif;
+    color: #000;
+    font-size:  40px;
+    line-height:  40px;
+    text-align: center;    
+    position: relative;
+    margin-bottom: 2px;
+    margin-top: 6px;
+ }
+
+ #thanks_column
+ {
+    position: absolute;
+    display: inline-block;
+    white-space: normal;
+ }
+
+ #thanks_column.left
+ {
+    top: 0px;
+    left: 5%
+    right: 50%;
+ }
+ #thanks_column.right
+ {
+    top: 0px;
+    left: 50%;
+    right: 95%;
+ }

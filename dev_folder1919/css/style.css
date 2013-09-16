@@ -663,18 +663,18 @@ h3 {
 .vcenter_outer #faq_fixed_wrapper {
    margin-left: 30px;
    width: 900px;
-   height: 800px;
+   height: 1200px;
    white-space: normal;
    text-align: left;
    font-family: 'Bender', serif;
-   line-height: 16px;
-   font-size: 16px;
+   line-height: 14px;
+   font-size: 14px;
 }
 h1 {
     font-family: 'Bender-Black', serif;
     color: #000;
-    font-size:  20px;
-    line-height:  20px;
+    font-size:  18px;
+    line-height:  18px;
     text-align: center;    
     position: relative;
     margin-bottom: -15px;

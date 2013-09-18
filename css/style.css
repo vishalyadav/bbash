@@ -74,8 +74,8 @@ html, body {
    line-height: 20px;
 }
 .vcenter_inner.offset_center {
-   padding-left: 220px;
-   width: calc(100% - 220px);
+   padding-left: 200px;
+   width: calc(100% - 200px);
    text-align: center;
 }
 .fullpage_section {
@@ -86,12 +86,13 @@ html, body {
 
     display: block;
     position: relative;
+    overflow: hidden;
 }
 
 
 /* NAV ***********************************************************************/
 #sticky_menu {
-    width: 100%;
+    width: 200px;
     position: fixed;
     left: 0;
     top: 0;
@@ -118,7 +119,7 @@ html, body {
    right: 0;
    bottom: 0;
    z-index: -1;
-   background-image: url("../img/pauley_large.jpg"); 
+   background-image: url("../img/pauley_large.jpg");
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -163,15 +164,265 @@ html, body {
 }
 
 
+/*** CONCERT *****************************************************************/
+#concert_fixed_wrapper
+{
+   font-family: 'Bender-Black', serif;
+   width: 900px;
+   height: 900px;
+   display: inline-block;
+   overflow: hidden;
+}
+#concert_title_wrapper
+{
+   color: #FFFFFF;
+   text-align: right;
+   width: 100%;
+}
+
+#concert_title_wrapper_left
+{
+   font-size: 50px;
+   line-height: 50px;
+   display: inline-block;
+   text-align: right;
+}
+#concert_title_wrapper_right
+{
+   font-size: 120px;
+   line-height: 120px;
+   display: inline-block;
+   text-align: left;
+}
+#artist_slide_canvas, #film_slide_canvas, #dance_slide_canvas
+{
+   margin-top: 120px;
+   position: relative;
+   width: 900px;
+   height: 600px;
+}
+#opener_wrapper,
+#headliner_wrapper,
+#film_wrapper,
+#dance_wrapper
+{
+   position: relative;
+   width: 100%;
+}
+#headliner_title, #film_title
+{
+   text-align: left;
+   color: #000000;
+   height: 120px;
+   width: 880px;
+   padding-left: 20px;
+   font-size: 100px;
+   line-height: 1.3;
+   background: #f8e505;
+   position: relative;
+   cursor: pointer;
+}
+#opener_info,
+#headliner_info
+{
+   display: none;
+   height: 420px;
+   background-color: rgba(255,255,255,0.6);
+   width: 100%;
+   font-family: 'Bender', serif;
+   font-size: 16px;
+}
+
+#parking_info {
+   display: none;
+   height: 270px;
+   background-color: rgba(255,255,255,0.6);
+   width: 100%;
+   font-family: 'Bender-Black', serif;
+   font-size: 24px;
+}
+
+#opener_title
+{
+   position: relative;
+   text-align: right;
+   margin-top: 20px;
+   padding-right: 20px;
+   color: #000000;
+   height: 120px;
+   width: 880px;
+
+   font-size: 100px;
+   line-height: 1.3;
+   background: #f8e505;
+   cursor: pointer;
+}
+
+#parking_title
+{
+   position: relative;
+   text-align: left;
+   margin-top: 20px;
+   padding-left: 20px;
+   color: #FFFFFF;
+   height: 60px;
+   width: 880px;
+
+   font-size: 38px;
+   line-height: 1.7;
+   background: #000000;
+   cursor: pointer;
+}
+
+.down_arrow_left:after
+{
+   content: "";
+   height: 0px;
+   width: 0px;
+   border-top: 30px solid black;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position:absolute;
+   left: 20px;
+   top: 40px;
+}
+.down_arrow_right:after
+{
+   content: "";
+   height: 0px;
+   width: 0px;
+   border-top: 30px solid black;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position:absolute;
+   right: 20px;
+   top: 40px;
+}
+.down_arrow_right#parking_title:after {
+  border-top: 20px solid white;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: 20px;
+}
+.up_arrow_left:after
+{
+   content: "";
+   height: 0px;
+   width: 0px;
+   border-bottom: 30px solid black;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position:absolute;
+   left: 20px;
+   top: 40px;
+}
+.up_arrow_right:after
+{
+   content: "";
+   height: 0px;
+   width: 0px;
+   border-bottom: 30px solid black;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position:absolute;
+   right: 20px;
+   top: 40px;
+}
+.up_arrow_right#parking_title:after {
+  border-bottom: 20px solid white;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: 20px;
+}
+
+.up_arrow_right#left_title:after, .up_arrow_right#right_title:after {
+  border-bottom: 30px solid white;
+}
+
+.down_arrow_right#left_title:after, .down_arrow_right#right_title:after {
+  border-top: 30px solid white;
+}
+
+.artist_pic {
+  position: absolute;
+  left: 0;
+  margin: 20px;
+}
+
+.artist_bio {
+  position: absolute;
+  left: 20px;
+  margin-top: 20px;
+  top: 430px;
+  width: 369px;
+  height: 400px;
+  text-align: left;
+}
+
+.artist_video {
+  position: absolute;
+  left: 460px;
+  margin-top: 20px;
+}
+
+#tyga_vid {
+  left: 460px;
+}
+
+.artist_sndcld {
+  position: absolute;
+  left: 410px;
+  top: 450px;
+}
+
+#tyga_sndcld {
+  left: 440px;
+}
+
+.deets {
+  width: 440px;
+  color: #000000;
+  text-align: center;
+  font-size: 26px;
+  position: relative;
+  padding-top: 40px;
+  line-height: 1.3;
+}
+
+#concession_deets {
+  position: relative;
+  top: -270px;
+  left: 450px;
+  font-size: 30px;
+}
+
+#parking_deets {
+    border-right: 6px black solid;
+    height: 230px;
+}
+
+#sub_deets {
+  font-size: 26px;
+  width: 320px;
+  text-align: right;
+}
 
 
 
 
+#concert {
+   background-image: url("../img/concerts.jpg");
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 1000px;
+}
 
-#concert,
-#film,
-#dance,
-#lounge
+
+#thanks,
+#lounge,
+#faq
 {
     background: #1460ea; /* Old browsers */
     background: -moz-linear-gradient(left,  #1460ea 0%, #f8e505 100%); /* FF3.6+ */
@@ -183,7 +434,161 @@ html, body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1460ea', endColorstr='#f8e505',GradientType=1 ); /* IE6-9 */
  }
 
+/********FILM ****************************************/
 
+ #film {
+    background-image: url("../img/film.jpg");
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 900px;
+ }
+
+#film_fixed_wrapper, #dance_fixed_wrapper, #lounge_fixed_wrapper
+{
+   font-family: 'Bender-Black', serif;
+   width: 900px;
+   height: 800px;
+   display: inline-block;
+   overflow: hidden;
+}
+
+#film_title_wrapper, #dance_title_wrapper, #lounge_title_wrapper, #concert_title_wrapper_top
+{
+   color: #f8e505;
+   text-align: right;
+   width: 100%;
+   font-size: 60px;
+   position: relative;
+   top: 50px;
+}
+
+#film_time, #dance_time, #lounge_time, #concert_title_wrapper_bottom {
+  color: #FFFFFF;
+  position: relative;
+  top: 40px;
+  line-height: 50px;
+}
+
+
+
+#film_info {
+   display: none;
+   height: 470px;
+   background-color: rgba(255,255,255,0.6);
+   width: 100%;
+   font-family: 'Bender-Black', serif;
+   font-size: 24px;
+   top: 200px;
+}
+
+#film_slide_canvas {
+  margin-top: 230px;
+}
+
+#donjon_vid {
+  position: absolute;
+  left: 320px;
+  margin-top: 20px;
+}
+
+#donjon_bio {
+  position: absolute;
+  left: 320px;
+  top: 460px;
+  text-align: left;
+  font-family: 'Bender', serif;
+   font-size: 16px;
+}
+
+/*********** DANCE ************************************/
+
+#dance {
+    background-image: url("../img/djedit.jpg");
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 900px;
+ }
+
+#left_title, #right_title {
+   text-align: left;
+   color: #FFFFFF;
+   height: 120px;
+   width: 400px;
+   padding-left: 30px;
+   font-size: 60px;
+   line-height: 2;
+   background: #2E2E2E;
+   position: relative;
+   cursor: pointer;
+}
+
+#right_title {
+  line-height: 1.05;
+}
+#left_wrapper {
+  position: absolute;
+}
+#right_wrapper {
+  position: relative;
+  top: 0px;
+  left: 460px;
+}
+
+#dance_slide_canvas {
+  margin-top: 300px;
+}
+
+#left_info, #right_info {
+   display: none;
+   height: 210px;
+   background-color: rgba(255,255,255,0.6);
+   width: 430px;
+}
+
+#left_player, #right_player {
+  padding: 20px;
+}
+
+
+/******** LOUNGE ******************************/
+
+#lounge {
+    background-image: url("../img/bplazaedit.jpg");
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 900px;
+ }
+
+#lounge_title_wrapper {
+  color: #000000;
+}
+
+#lounge_activities_wrapper {
+  position: relative;
+  top: 150px;
+}
+.lounge_activities {
+  text-align: center;
+   color: #000000;
+   height: 120px;
+   width: 880px;
+   padding-left: 20px;
+   font-size: 100px;
+   line-height: 1.3;
+   background: #f8e505;
+   position: relative;
+   margin-bottom: 30px;
+}
+
+#photobooth, #refreshments {
+  background: #FFFFFF;
+}
 
 #wrapper {
     /*position: absolute;*/
@@ -216,54 +621,17 @@ a {
     color: #000000;
 }
 
-.nav_link {
+li {
     font-family: 'Bender-Black', serif;
     color: #000000;
     font-size: 40px;
-    width: 210px;
+    width: 190px;
     background-color: #FFFFFF;
     margin: 10px 10px 10px 0;
     height: 45px;
     padding-left: 10px;
-    padding-top: 5px;
-    line-height: 40px;
-    position: relative;
-    cursor: pointer;
+    line-height: 1.3;
 }
-.nav_link:after {
-   content: "";
-   position: absolute;
-   right: 8px;
-   top: 14px;
-   height: 0;
-   width: 0;
-   border-left: 10px solid black;
-   border-top: 10px solid transparent;
-   border-bottom: 10px solid transparent;
-}
-.nav_link:hover {
-   background: #F8E505;
-}
-
-.nav_toggle {
-    font-family: 'Bender-Black', serif;
-    color: #000000;
-    font-size: 40px;
-    background-color: #FFFFFF;
-    height: 45px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    line-height: 40px;
-    position: absolute;
-    top: 0px;
-    left: 100%;
-    display: none;
-    overflow-y: hidden;
-    white-space: nowrap;
-}
-
-
 
 h2 {
     font-family: 'Bender-Black', serif;
@@ -290,3 +658,76 @@ h3 {
     text-align: center;    
     position: relative;
 }
+
+/******** FAQNKS ******************************/
+.vcenter_outer #faq_fixed_wrapper {
+   margin-left: 30px;
+   width: 900px;
+   height: 1200px;
+   white-space: normal;
+   text-align: left;
+   font-family: 'Bender', serif;
+   line-height: 14px;
+   font-size: 14px;
+}
+h1 {
+    font-family: 'Bender-Black', serif;
+    color: #000;
+    font-size:  18px;
+    line-height:  18px;
+    text-align: center;    
+    position: relative;
+    margin-bottom: -15px;
+    margin-top: 10px;
+    white-space: normal;
+    word-wrap: normal;
+ }
+
+
+/******** THANKS ******************************/
+#thanks_fixed_wrapper {
+   width: 900px;
+   height: 600px;
+}
+strong {
+    font-family: 'Bender-Black', serif;
+   line-height: 16px;
+   font-size: 16px;
+ }
+
+
+h1 {
+    font-family: 'Bender-Black', serif;
+    color: #000;
+    font-size:  20px;
+    line-height:  20px;
+    text-align: center;    
+    position: relative;
+    margin-bottom: 2px;
+    margin-top: 10px;
+ }
+
+
+ #thanks_column
+ {
+    font-family: 'Bender', serif;
+    font-size:  20px;
+    line-height:  20px;
+    position: absolute;
+    display: inline-block;
+    white-space: normal;
+ }
+
+ #thanks_column.left
+ {
+    top: 30px;
+    left: 200px;
+    right: 50%;
+    padding-left: 10px;
+ }
+ #thanks_column.right
+ {
+    top: 55px;
+    left: 55%;
+    right: 5%;
+ }

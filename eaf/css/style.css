@@ -1,4 +1,49 @@
-html { 
+/* BOILERPLATE ***************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#wrapper { 
     background: url("../img/UCLA_edit_smaller_mod.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -109,8 +154,10 @@ html {
 
 .logos {
     position: absolute;
-    top: 600px;
-    width: 100%;
+    bottom: 10px;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
 }
 
 #bb_link {
@@ -127,6 +174,84 @@ html {
     opacity: .7;
 }
 
+#student_orgs {
+    background: url("../img/eaf_background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+    position: absolute;
+    top: 600px;
+    width: 100%;
+    height: 700px;
+}
+
+#background_orgs {
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    margin-top: 100px;
+    left: 50%;
+    margin-left: -300px;
+    background-color: #aaa;
+    opacity: .5;
+    z-index: 1;
+}
+
+#scroll_orgs {
+    position: relative;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    height: 460px;
+    margin-top: 120px;
+    color: #000;
+    z-index: 100;
+    overflow: auto;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 8px;
+}
+
+h4 {
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+.body_orgs {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    width: 100%;
+    height: auto;
+    line-height: 16px;
+    padding-bottom: 6px;
+}
+
+#orgs_title {
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 929px) {
+    #background_orgs {
+        margin-top: 150px;
+    }
+    #scroll_orgs {
+        margin-top: 170px;
+    }
+}
 
 
 
